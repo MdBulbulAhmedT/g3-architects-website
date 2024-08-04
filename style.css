@@ -95,6 +95,30 @@ nav ul li a:hover{
     transition-duration: 0.5s;
 }
 
+/* Teams releted style */
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.teams-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 0;
+    gap: 50px;
+}
+
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.teams-style{
+    color: #FF900E;
+}
+
 /* Responsive for mobile device */
 @media screen and (max-width: 576px) {
     /* banner section */
@@ -108,6 +132,22 @@ nav ul li a:hover{
     header{
         padding: 10px 10px;
     }
+
+    /* Teams related */
+
+    .teams-container{
+        flex-direction: column-reverse;
+        padding: 0 20px;
+    }
+
+    .teams-img-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .teams-img-container img{
+        width: 100%;
+    }
 }
 
 /* Responsive for Tablet device */
@@ -119,5 +159,11 @@ nav ul li a:hover{
 
     header{
         padding: 20px;
+    }
+
+    /* teams related */
+    .teams-container{
+        flex-direction: column;
+        padding: 0 20px;
     }
 }
