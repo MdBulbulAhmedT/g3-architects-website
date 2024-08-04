@@ -194,6 +194,23 @@ main{
     padding: 10px 5px;
     border-radius: 6px;
 }
+
+/* sponspors related style */
+.sponsore-section{
+    margin-bottom: 100px;
+}
+
+.sponspors-discription{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sponsore-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
 /* Responsive for mobile device */
 @media screen and (max-width: 576px) {
     /* banner section */
@@ -243,6 +260,12 @@ main{
     .fact-discription{
         padding-left: 10px;
     }
+
+    /* sponspors related */
+    .sponsore-container{
+        flex-direction: column;
+        gap: 10px;
+    }
     
 }
 
@@ -281,5 +304,12 @@ main{
     }
     .fact-discription{
         padding-left: 10px;
+    }
+
+    /* sponspors related */
+    .sponsore-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 }
