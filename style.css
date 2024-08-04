@@ -174,6 +174,26 @@ main{
     font-size: 24px;
     font-weight: 600;
 }
+
+/* fact related style */
+.fact-discription{
+    margin-bottom: 30px;
+}
+.fact-section{
+    margin-bottom: 100px;
+}
+.fact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fact-card{
+    text-align: center;
+    border: 1px solid #FF900E;
+    padding: 10px 5px;
+    border-radius: 6px;
+}
 /* Responsive for mobile device */
 @media screen and (max-width: 576px) {
     /* banner section */
@@ -213,6 +233,16 @@ main{
     .fetured-img{
         width: 100%;
     }
+
+    /* fact related */
+    .fact-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fact-discription{
+        padding-left: 10px;
+    }
     
 }
 
@@ -239,5 +269,17 @@ main{
     }
     .fetured-img{
         width: 100%;
+    }
+    /* fact related */
+    .fact-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 10px;
+        /* flex-direction: column;
+        gap: 20px; */
+    }
+    .fact-discription{
+        padding-left: 10px;
     }
 }
